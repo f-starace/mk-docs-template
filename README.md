@@ -1,7 +1,7 @@
 # Installation
 
 
-Note, to run the script in this repository, you need to have a version of Python > 3.10 and < 3.12
+Note, to run the script in this repository, you need to have a version of Python > 3.10
 
 
 ### Using **Poetry** (recommended)
