@@ -1,0 +1,49 @@
+site_name: Documentation Template
+theme: 
+  name: material
+  logo: images/logo.png
+  favicon: images/favicon.png
+  palette:
+    - scheme: default
+      primary: teal
+      accent: teal
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to dark mode
+    - scheme: slate
+      primary: teal
+      accent: teal
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to light mode
+
+extra_css:
+  - stylesheets/extra.css
+
+
+
+watch: 
+  # code folders to watch for code changes
+  - package_a
+  - package_b
+
+
+plugins:
+  - search
+  - mkdocstrings
+  - gen-files:
+      scripts: # for generating reference pages integrated with mkdocstrings
+      - docs/generate_docs.py
+  - literate-nav: # for generating the navigation bar
+      nav_file: navigation.md
+  - section-index
+  
+
+markdown_extensions:
+  - tables
+  # https://squidfunk.github.io/mkdocs-material/reference/diagrams/?h=mermaid
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format

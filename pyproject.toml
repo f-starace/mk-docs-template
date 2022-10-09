@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "mk-docs-template"
+version = "0.1.0"
+description = "A template for creating documentations with python"
+authors = ["f-starace <64803153+f-starace@users.noreply.github.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "mk_docs_template"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[tool.poetry.group.dev.dependencies]
+mkdocs = "^1.4.0"
+mkdocs-autorefs = "^0.4.1"
+mkdocs-gen-files = "^0.4.0"
+mkdocs-literate-nav = "^0.5.0"
+mkdocs-material = "^8.5.6"
+mkdocs-material-extensions = "^1.0.3"
+mkdocs-pdf-export-plugin = "^0.5.10"
+mkdocs-section-index = "^0.3.4"
+mkdocstrings = "^0.19.0"
+mkdocstrings-python = "^0.7.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
