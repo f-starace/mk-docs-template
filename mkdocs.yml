@@ -1,8 +1,9 @@
 site_name: Documentation Template
 theme: 
   name: material
-  logo: images/logo.png
-  favicon: images/favicon.png
+  # Include your own logo and favicon
+  # logo: images/logo.png
+  # favicon: images/favicon.png
   palette:
     - scheme: default
       primary: teal
